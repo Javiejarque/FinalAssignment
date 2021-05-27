@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/navigation"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/callFragment"
+        android:name="com.example.finalassignment.CallFragment"
+        android:label="CallFragment" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.example.finalassignment.ChatFragment"
+        android:label="ChatFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.finalassignment.LoginFragment"
+        android:label="LoginFragment" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.finalassignment.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_callFragment"
+            app:destination="@id/callFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_chatFragment"
+            app:destination="@id/chatFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_statusFragment"
+            app:destination="@id/statusFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.finalassignment.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/statusFragment"
+        android:name="com.example.finalassignment.StatusFragment"
+        android:label="StatusFragment" />
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.finalassignment.UserFragment"
+        android:label="UserFragment" />
+</navigation>
